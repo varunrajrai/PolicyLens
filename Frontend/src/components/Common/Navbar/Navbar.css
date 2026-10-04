@@ -1,0 +1,146 @@
+/* ===========================
+   Global Reset
+=========================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ===========================
+   Navbar
+=========================== */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 18px 8%;
+
+    background: #ffffff;
+
+    border-bottom: 1px solid #e5e7eb;
+
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+/* ===========================
+   Logo
+=========================== */
+
+.navbar-logo {
+    text-decoration: none;
+
+    font-size: 30px;
+    font-weight: 700;
+
+    color: #0f172a;
+
+    transition: color 0.3s ease;
+}
+
+.navbar-logo:hover {
+    color: #2563eb;
+}
+
+/* ===========================
+   Navigation
+=========================== */
+
+.navbar-links {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+
+    list-style: none;
+}
+
+.navbar-item {
+    list-style: none;
+}
+
+.navbar-link {
+    text-decoration: none;
+
+    color: #374151;
+
+    font-size: 17px;
+    font-weight: 500;
+
+    transition: color 0.3s ease;
+}
+
+.navbar-link:hover {
+    color: #2563eb;
+}
+
+/* ===========================
+   Authentication
+=========================== */
+
+.navbar-auth {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+/* Shared Button Style */
+
+.navbar-login-btn,
+.navbar-register-btn {
+    width: 110px;
+    height: 44px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-decoration: none;
+
+    border-radius: 10px;
+
+    font-size: 15px;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: all 0.3s ease;
+}
+
+/* ===========================
+   Login Button
+=========================== */
+
+.navbar-login-btn {
+    background: #ffffff;
+
+    color: #2563eb;
+
+    border: 2px solid #2563eb;
+}
+
+.navbar-login-btn:hover {
+    background: #2563eb;
+    color: #ffffff;
+}
+
+/* ===========================
+   Register Button
+=========================== */
+
+.navbar-register-btn {
+    background: #2563eb;
+
+    color: #ffffff;
+
+    border: 2px solid #2563eb;
+}
+
+.navbar-register-btn:hover {
+    background: #1d4ed8;
+    border-color: #1d4ed8;
+}

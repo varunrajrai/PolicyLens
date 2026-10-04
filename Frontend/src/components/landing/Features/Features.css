@@ -1,0 +1,235 @@
+.features{
+
+    padding:120px 8%;
+
+    background:#ffffff;
+
+}
+
+.features-heading{
+
+    text-align:center;
+
+    margin-bottom:70px;
+
+}
+
+.features-heading h2{
+
+    font-size:44px;
+
+    color:#0F172A;
+
+    margin-bottom:18px;
+
+}
+
+.features-heading p{
+
+    max-width:760px;
+
+    margin:auto;
+
+    font-size:18px;
+
+    line-height:1.8;
+
+    color:#64748B;
+
+}
+
+/* Grid */
+
+.features-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+
+    gap:30px;
+
+}
+
+/* Card */
+
+.feature-card{
+
+    background:white;
+
+    border:1px solid #E2E8F0;
+
+    border-radius:22px;
+
+    padding:35px;
+
+    transition:.35s;
+
+    position:relative;
+
+    overflow:hidden;
+
+    box-shadow:0 12px 30px rgba(15,23,42,.05);
+
+}
+
+/* Top Accent */
+
+.feature-card:nth-child(1)::before{
+
+    background:#10B981;
+
+}
+
+.feature-card:nth-child(2)::before{
+
+    background:#6366F1;
+
+}
+
+.feature-card:nth-child(3)::before{
+
+    background:#F59E0B;
+
+}
+
+.feature-card:nth-child(4)::before{
+
+    background:#8B5CF6;
+
+}
+
+.feature-card:nth-child(5)::before{
+
+    background:#06B6D4;
+
+}
+
+.feature-card:nth-child(6)::before{
+
+    background:#2563EB;
+
+}
+
+/* Hover */
+
+.feature-card:hover{
+
+    transform:translateY(-10px);
+
+    box-shadow:0 25px 55px rgba(37,99,235,.12);
+
+}
+
+/* Icon */
+.feature-icon{
+
+    width:72px;
+    height:72px;
+
+    border-radius:18px;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    font-size:30px;
+
+    margin-bottom:28px;
+
+}
+
+.feature-card:nth-child(1) .feature-icon{
+
+    background:#ECFDF5;
+    color:#10B981;
+
+}
+
+.feature-card:nth-child(2) .feature-icon{
+
+    background:#EEF2FF;
+    color:#6366F1;
+
+}
+
+.feature-card:nth-child(3) .feature-icon{
+
+    background:#FFF7ED;
+    color:#F59E0B;
+
+}
+
+.feature-card:nth-child(4) .feature-icon{
+
+    background:#F3E8FF;
+    color:#8B5CF6;
+
+}
+
+.feature-card:nth-child(5) .feature-icon{
+
+    background:#ECFEFF;
+    color:#06B6D4;
+
+}
+
+.feature-card:nth-child(6) .feature-icon{
+
+    background:#EFF6FF;
+    color:#2563EB;
+
+}
+
+/* Heading */
+
+.feature-card h3{
+
+    font-size:24px;
+
+    color:#0F172A;
+
+    margin-bottom:16px;
+
+}
+
+/* Description */
+
+.feature-card p{
+
+    color:#64748B;
+
+    line-height:1.8;
+
+    font-size:16px;
+
+}
+
+/* Responsive */
+
+@media(max-width:768px){
+
+.features{
+
+padding:90px 6%;
+
+}
+
+.features-heading h2{
+
+font-size:36px;
+
+}
+
+.features-heading p{
+
+font-size:16px;
+
+}
+
+.features-grid{
+
+grid-template-columns:1fr;
+
+}
+
+}

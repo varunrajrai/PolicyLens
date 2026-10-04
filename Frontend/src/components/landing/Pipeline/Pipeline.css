@@ -1,0 +1,241 @@
+.pipeline{
+
+    padding:120px 8%;
+
+    background:linear-gradient(
+        180deg,
+        #ffffff 0%,
+        #f8fbff 40%,
+        #f2f7ff 70%,
+        #ffffff 100%
+    );
+
+}
+
+.pipeline-heading{
+
+    text-align:center;
+
+    margin-bottom:90px;
+
+}
+
+.pipeline-heading h2{
+
+    font-size:44px;
+
+    color:#0F172A;
+
+    margin-bottom:18px;
+
+}
+
+.pipeline-heading p{
+
+    max-width:720px;
+
+    margin:auto;
+
+    color:#64748B;
+
+    line-height:1.8;
+
+    font-size:18px;
+
+}
+
+/* Timeline */
+
+.pipeline-container{
+
+    max-width:1100px;
+
+    margin:auto;
+
+    position:relative;
+
+}
+
+.pipeline-container::before{
+
+    content:"";
+
+    position:absolute;
+
+    left:50%;
+
+    top:0;
+
+    transform:translateX(-50%);
+
+    width:4px;
+
+    height:100%;
+
+    background:linear-gradient(
+        #CBD5E1,
+        #2563EB,
+        #CBD5E1
+    );
+
+}
+
+/* Step */
+
+.pipeline-step{
+
+    width:50%;
+
+    position:relative;
+
+    margin-bottom:70px;
+
+}
+
+.pipeline-step.left{
+
+    left:0;
+
+    padding-right:70px;
+
+    text-align:right;
+
+}
+
+.pipeline-step.right{
+
+    left:50%;
+
+    padding-left:70px;
+
+}
+
+/* Circle */
+
+.pipeline-circle{
+
+    width:64px;
+
+    height:64px;
+
+    border-radius:50%;
+
+    color:white;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-size:26px;
+
+    position:absolute;
+
+    top:25px;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.15);
+
+}
+
+.pipeline-step.left .pipeline-circle{
+
+    right:-32px;
+
+}
+
+.pipeline-step.right .pipeline-circle{
+
+    left:-32px;
+
+}
+
+/* Card */
+
+.pipeline-card{
+
+    background:white;
+
+    border-radius:18px;
+
+    padding:28px;
+
+    border:1px solid #E2E8F0;
+
+    box-shadow:0 20px 45px rgba(15,23,42,.08);
+
+    transition:.35s;
+
+}
+
+.pipeline-card:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:0 25px 55px rgba(37,99,235,.15);
+
+}
+
+.pipeline-card span{
+
+    font-size:13px;
+
+    font-weight:700;
+
+    color:#2563EB;
+
+    text-transform:uppercase;
+
+    letter-spacing:1px;
+
+}
+
+.pipeline-card h3{
+
+    margin:14px 0;
+
+    font-size:24px;
+
+    color:#0F172A;
+
+}
+
+.pipeline-card p{
+
+    color:#64748B;
+
+    line-height:1.8;
+
+}
+
+/* Mobile */
+
+@media(max-width:900px){
+
+.pipeline-container::before{
+
+left:25px;
+
+}
+
+.pipeline-step{
+
+width:100%;
+
+left:0 !important;
+
+padding-left:90px;
+
+padding-right:0;
+
+text-align:left;
+
+}
+
+.pipeline-circle{
+
+left:0 !important;
+
+}
+
+}

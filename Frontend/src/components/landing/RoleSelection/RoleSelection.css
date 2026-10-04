@@ -1,0 +1,217 @@
+.roles{
+
+    padding:120px 8%;
+
+    background:#F8FAFC;
+
+}
+
+.roles-heading{
+
+    text-align:center;
+
+    margin-bottom:70px;
+
+}
+
+.roles-heading h2{
+
+    font-size:44px;
+
+    color:#0F172A;
+
+    margin-bottom:18px;
+
+}
+
+.roles-heading p{
+
+    max-width:720px;
+
+    margin:auto;
+
+    font-size:18px;
+
+    line-height:1.8;
+
+    color:#64748B;
+
+}
+
+/* Cards Container */
+
+.roles-container{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(380px,1fr));
+
+    gap:40px;
+
+}
+
+/* Individual Card */
+
+.role-card{
+
+    background:white;
+
+    border:1px solid #E2E8F0;
+
+    border-radius:24px;
+
+    padding:45px 40px;
+
+    transition:.35s;
+
+    box-shadow:0 12px 30px rgba(15,23,42,.06);
+
+}
+
+.role-card:hover{
+
+    transform:translateY(-10px);
+
+    box-shadow:0 25px 55px rgba(37,99,235,.12);
+
+}
+
+/* Icon */
+
+.role-icon{
+
+    font-size:42px;
+
+    margin-bottom:22px;
+
+}
+
+/* Different colors */
+
+.citizen .role-icon{
+
+    color:#10B981;
+
+}
+
+.government .role-icon{
+
+    color:#2563EB;
+
+}
+
+/* Heading */
+
+.role-card h3{
+
+    font-size:28px;
+
+    color:#0F172A;
+
+    margin-bottom:22px;
+
+}
+
+/* List */
+
+.role-card ul{
+
+    list-style:none;
+
+    margin-bottom:35px;
+
+}
+
+.role-card ul li{
+
+    padding:12px 0;
+
+    color:#64748B;
+
+    font-size:16px;
+
+    border-bottom:1px solid #F1F5F9;
+
+}
+
+.role-card ul li:last-child{
+
+    border:none;
+
+}
+
+/* Button */
+
+.role-card button{
+
+    width:100%;
+
+    padding:16px;
+
+    border:none;
+
+    border-radius:14px;
+
+    background:#2563EB;
+
+    color:white;
+
+    font-size:16px;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.role-card button:hover{
+
+    background:#1D4ED8;
+
+}
+
+/* Different button for citizen */
+
+.citizen button{
+
+    background:#10B981;
+
+}
+
+.citizen button:hover{
+
+    background:#059669;
+
+}
+
+/* Responsive */
+
+@media(max-width:768px){
+
+.roles{
+
+padding:90px 6%;
+
+}
+
+.roles-heading h2{
+
+font-size:36px;
+
+}
+
+.roles-heading p{
+
+font-size:16px;
+
+}
+
+.roles-container{
+
+grid-template-columns:1fr;
+
+}
+
+}

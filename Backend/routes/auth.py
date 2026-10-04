@@ -208,7 +208,7 @@ def admin_dashboard():
 
     claims = get_jwt()
 
-    if claims["role"] != "GOVERNMENT":
+    if claims["role"] != "GOVERNMENT_ADMIN":
         return jsonify({
             "success": False,
             "message": "Access Denied. Government users only."
